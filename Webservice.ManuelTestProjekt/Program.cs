@@ -14,8 +14,7 @@ namespace Webservice.ManuelTestProjekt
         {
             WebConnect web = new WebConnect();
             ExchangeRates r = web.GetExchangeRates();
-            //Console.WriteLine(r.Base);
-            //Console.WriteLine(r.Rates["HKD"]);
+            Console.WriteLine(r);
             Console.ReadKey();
         }
     }

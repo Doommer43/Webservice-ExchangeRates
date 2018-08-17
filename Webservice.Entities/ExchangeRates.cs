@@ -79,5 +79,17 @@ namespace Webservice.Entities
             set { disclaimer = value; }
         }
         #endregion
+        /// <summary>
+        /// Writes every valuta andd their value from the Dictionary rates
+        /// </summary>
+        /// <returns>a string "End of List" upon completion</returns>
+        public override string ToString()
+        {
+            foreach (var item in rates)
+            {
+                Console.WriteLine("{0}: {1}", item.Key, item.Value);
+            }
+            return "End of list";
+        }
     }
 }
